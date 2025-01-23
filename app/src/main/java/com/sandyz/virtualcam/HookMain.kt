@@ -110,7 +110,7 @@ class HookMain : IXposedHookLoadPackage, IXposedHookZygoteInit, IXposedHookInitP
         HookUtils.init(lpparam)
 
         hooks.forEach {
-            var supported = (lpparam.packageName == "com.binance.dev")
+            var supported = (lpparam.packageName == "com.okinc.okex.gp")
             it.getSupportedPackages().forEach { pkg ->
                 if (pkg == lpparam.packageName) {
                     supported = true
