@@ -90,7 +90,7 @@ class HookMain : IXposedHookLoadPackage, IXposedHookZygoteInit, IXposedHookInitP
 
     override fun handleInitPackageResources(resparam: XC_InitPackageResources.InitPackageResourcesParam?) {
         xResources = resparam?.res
-        var supported = (resparam?.packageName == "com.sandyz.virtualcam")
+        var supported = true
         hooks.forEach {
             it.getSupportedPackages().forEach { pkg ->
                 if (pkg == resparam?.packageName) {
