@@ -28,7 +28,7 @@ A virtual camera module based on the Xposed framework suitable for Android 9.0 a
 - 小米原生相机预览
 - WhatsApp视频通话[Sep 18 2024新增]
 
-其他地方插件均不生效（因为未测试，为了兼容性就禁用了），如需使用请修改源代码并重新编译。
+其他地方插件均生效
 
 
 
